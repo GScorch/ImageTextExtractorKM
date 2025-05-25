@@ -1,0 +1,3 @@
+curl -k -X POST -F "image=@Test3.png" https://localhost:7219/api/ocr/extract-text
+curl -k -X POST -F "image=@Test4.png" https://localhost:7219/api/ocr/extract-text
+curl -k -X POST -F "image=@Test5.png" https://localhost:7219/api/ocr/extract-text

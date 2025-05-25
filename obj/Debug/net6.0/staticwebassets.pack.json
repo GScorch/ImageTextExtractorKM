@@ -1,0 +1,105 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Project\\Netcore\\ImageTextExtractor\\wwwroot\\Test1.png",
+      "PackagePath": "staticwebassets\\Test1.png"
+    },
+    {
+      "Id": "D:\\Project\\Netcore\\ImageTextExtractor\\wwwroot\\lib\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Netcore\\ImageTextExtractor\\wwwroot\\lib\\cropper\\cropper.min.css",
+      "PackagePath": "staticwebassets\\lib\\cropper\\cropper.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Netcore\\ImageTextExtractor\\wwwroot\\lib\\cropper\\cropper.min.js",
+      "PackagePath": "staticwebassets\\lib\\cropper\\cropper.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Netcore\\ImageTextExtractor\\wwwroot\\uploads\\1229638.jpg\\1229638.jpg.txt",
+      "PackagePath": "staticwebassets\\uploads\\1229638.jpg\\1229638.jpg.txt"
+    },
+    {
+      "Id": "D:\\Project\\Netcore\\ImageTextExtractor\\wwwroot\\uploads\\1229638.jpg\\1229638.txt",
+      "PackagePath": "staticwebassets\\uploads\\1229638.jpg\\1229638.txt"
+    },
+    {
+      "Id": "D:\\Project\\Netcore\\ImageTextExtractor\\wwwroot\\uploads\\1229638.jpg\\cropped_1229638.jpg",
+      "PackagePath": "staticwebassets\\uploads\\1229638.jpg\\cropped_1229638.jpg"
+    },
+    {
+      "Id": "D:\\Project\\Netcore\\ImageTextExtractor\\wwwroot\\uploads\\1229638.jpg\\original_1229638.jpg",
+      "PackagePath": "staticwebassets\\uploads\\1229638.jpg\\original_1229638.jpg"
+    },
+    {
+      "Id": "D:\\Project\\Netcore\\ImageTextExtractor\\wwwroot\\uploads\\1229638.jpg\\preprocessed_1229638.jpg.png",
+      "PackagePath": "staticwebassets\\uploads\\1229638.jpg\\preprocessed_1229638.jpg.png"
+    },
+    {
+      "Id": "D:\\Project\\Netcore\\ImageTextExtractor\\wwwroot\\uploads\\1229638\\1229638.txt",
+      "PackagePath": "staticwebassets\\uploads\\1229638\\1229638.txt"
+    },
+    {
+      "Id": "D:\\Project\\Netcore\\ImageTextExtractor\\wwwroot\\uploads\\1229638\\cropped_1229638.png",
+      "PackagePath": "staticwebassets\\uploads\\1229638\\cropped_1229638.png"
+    },
+    {
+      "Id": "D:\\Project\\Netcore\\ImageTextExtractor\\wwwroot\\uploads\\1229638\\original_1229638",
+      "PackagePath": "staticwebassets\\uploads\\1229638"
+    },
+    {
+      "Id": "D:\\Project\\Netcore\\ImageTextExtractor\\wwwroot\\uploads\\1229638\\preprocessed_1229638.png",
+      "PackagePath": "staticwebassets\\uploads\\1229638\\preprocessed_1229638.png"
+    },
+    {
+      "Id": "D:\\Project\\Netcore\\ImageTextExtractor\\wwwroot\\uploads\\458515.jpg\\cropped_458515.jpg",
+      "PackagePath": "staticwebassets\\uploads\\458515.jpg\\cropped_458515.jpg"
+    },
+    {
+      "Id": "D:\\Project\\Netcore\\ImageTextExtractor\\wwwroot\\uploads\\458515.jpg\\original_458515.jpg",
+      "PackagePath": "staticwebassets\\uploads\\458515.jpg\\original_458515.jpg"
+    },
+    {
+      "Id": "D:\\Project\\Netcore\\ImageTextExtractor\\wwwroot\\uploads\\458515.jpg\\preprocessed_458515.jpg.png",
+      "PackagePath": "staticwebassets\\uploads\\458515.jpg\\preprocessed_458515.jpg.png"
+    },
+    {
+      "Id": "D:\\Project\\Netcore\\ImageTextExtractor\\wwwroot\\uploads\\cropped_odo2\\cropped_cropped_odo2.png",
+      "PackagePath": "staticwebassets\\uploads\\cropped_odo2\\cropped_cropped_odo2.png"
+    },
+    {
+      "Id": "D:\\Project\\Netcore\\ImageTextExtractor\\wwwroot\\uploads\\cropped_odo2\\cropped_odo2.txt",
+      "PackagePath": "staticwebassets\\uploads\\cropped_odo2\\cropped_odo2.txt"
+    },
+    {
+      "Id": "D:\\Project\\Netcore\\ImageTextExtractor\\wwwroot\\uploads\\cropped_odo2\\original_cropped_odo2",
+      "PackagePath": "staticwebassets\\uploads\\cropped_odo2"
+    },
+    {
+      "Id": "D:\\Project\\Netcore\\ImageTextExtractor\\wwwroot\\uploads\\cropped_odo2\\preprocessed_cropped_odo2.png",
+      "PackagePath": "staticwebassets\\uploads\\cropped_odo2\\preprocessed_cropped_odo2.png"
+    },
+    {
+      "Id": "D:\\Project\\Netcore\\ImageTextExtractor\\wwwroot\\uploads\\original_1229638.jpg",
+      "PackagePath": "staticwebassets\\uploads\\original_1229638.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ImageTextExtractor.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ImageTextExtractor.props",
+      "PackagePath": "build\\ImageTextExtractor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ImageTextExtractor.props",
+      "PackagePath": "buildMultiTargeting\\ImageTextExtractor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ImageTextExtractor.props",
+      "PackagePath": "buildTransitive\\ImageTextExtractor.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

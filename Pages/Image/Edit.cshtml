@@ -1,0 +1,205 @@
+@page
+@model ImageTextExtractor.Pages.Image.EditModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <title>Upload and Crop</title>
+    <link href="/lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="/lib/cropper/cropper.min.css" rel="stylesheet" />
+    <style>
+        #drop-zone {
+            border: 2px dashed #ccc;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            color: #999;
+            cursor: pointer;
+            margin: 0 auto 20px auto;
+            width: 100%;
+            max-width: 500px;
+            transition: border-color 0.3s;
+        }
+
+        #drop-zone:hover {
+            border-color: #007bff;
+            color: #007bff;
+        }
+
+        #preview {
+            max-width: 100%;
+            margin-top: 20px;
+            display: none;
+            border-radius: 10px;
+        }
+    </style>
+    
+</head>
+
+<body class="p-4">
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <h2 class="mb-4">Upload Image</h2>
+        </div>
+    </div>
+    <div class="upload-container mx-auto" style="max-width: 500px;">
+        <form method="post" enctype="multipart/form-data" class="text-center">
+            @Html.AntiForgeryToken()
+            <!-- Hidden File Input -->
+            <input type="file" id="imageInput" name="OriginalImage" accept="image/*" class="d-none"
+                style="visibility: none;" />
+
+            <!-- Drop Zone -->
+            <div id="drop-container">
+                <div id="drop-zone" class="mx-auto">
+                    Drag & drop image here or click to select
+                </div>
+            </div>
+
+            <!-- Image Preview -->
+            <img id="preview" />
+
+            <!-- Hidden Crop Data -->
+            <input type="hidden" name="CropData" id="CropData" />
+
+            <!-- Submit Button -->
+            <div class="d-flex justify-content-between mt-3">
+                <button type="button" onclick="showDropZone()" class="btn btn-outline-secondary btn-sm">
+                    Remove Image
+                </button>
+                <button type="submit" class="btn btn-primary px-5 py-2 fs-5 rounded-pill shadow-sm">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script src="/lib/cropper/cropper.min.js"></script>
+    <script>
+        const dropZone = document.getElementById('drop-zone');
+        const imageInput = document.getElementById('imageInput');
+        const preview = document.getElementById('preview');
+        let cropper;
+
+        dropZone.addEventListener('click', () => imageInput.click());
+
+        dropZone.addEventListener('dragover', e => {
+            e.preventDefault();
+            dropZone.classList.add('bg-light');
+        });
+
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.classList.remove('bg-light');
+        });
+
+        dropZone.addEventListener('drop', e => {
+            e.preventDefault();
+            dropZone.classList.remove('bg-light');
+            const file = e.dataTransfer.files[0];
+            if (file) {
+                handleFile(file);
+            }
+        });
+
+        imageInput.addEventListener('change', () => {
+            const file = imageInput.files[0];
+            if (file) {
+                handleFile(file);
+            }
+        });
+
+        @* function handleFile(file) {
+            const reader = new FileReader();
+            reader.onload = e => {
+                preview.src = e.target.result;
+                preview.style.display = 'block';
+
+                if (cropper) cropper.destroy();
+
+                cropper = new Cropper(preview, {
+                    aspectRatio: NaN,
+                    viewMode: 1,
+                    autoCropArea: 0.8,
+                    crop(event) {
+                        const data = cropper.getData();
+                        document.getElementById('CropData').value = JSON.stringify(data);
+                    }
+                });
+            };
+            reader.readAsDataURL(file);
+        }
+
+        reader.onload = e => {
+            preview.src = e.target.result;
+            preview.style.display = 'block';
+
+            if (cropper) cropper.destroy();
+
+            cropper = new Cropper(preview, {
+                aspectRatio: NaN,
+                viewMode: 1,
+                autoCropArea: 0.8,
+                crop(event) {
+                    const data = cropper.getData();
+                    document.getElementById('CropData').value = JSON.stringify(data);
+                }
+            });
+
+            // Scroll into view
+            setTimeout(() => {
+                preview.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
+        }; *@
+
+    function handleFile(file) {
+        if (!file.type.startsWith('image/')) {
+            alert('Please select a valid image file.');
+            showDropZone(); // show again on invalid file
+            return;
+        }
+
+        const reader = new FileReader();
+        reader.onload = e => {
+            preview.src = e.target.result;
+            preview.style.display = 'block';
+
+            // Hide drop zone
+            document.getElementById('drop-container').style.display = 'none';
+
+            if (cropper) cropper.destroy();
+
+            cropper = new Cropper(preview, {
+                aspectRatio: NaN,
+                viewMode: 1,
+                autoCropArea: 0.8,
+                crop(event) {
+                    const data = cropper.getData();
+                    document.getElementById('CropData').value = JSON.stringify(data);
+                }
+            });
+        };
+        reader.readAsDataURL(file);
+    }
+
+    function showDropZone() {
+        document.getElementById('drop-container').style.display = 'block';
+        preview.style.display = 'none';
+
+        if (cropper) {
+            cropper.destroy();
+            cropper = null;
+        }
+
+        imageInput.value = ''; // reset input
+        document.getElementById('CropData').value = '';
+    }
+    </script>
+</body>
+
+</html>
