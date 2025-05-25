@@ -9,15 +9,15 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ImageTextExtractor
 build_property.RootNamespace = ImageTextExtractor
-build_property.ProjectDir = D:\Project\Netcore\ImageTextExtractor\
+build_property.ProjectDir = D:\Project\Netcore\ImageTextExtractorKM\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Project\Netcore\ImageTextExtractor
+build_property.MSBuildProjectDirectory = D:\Project\Netcore\ImageTextExtractorKM
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Project/Netcore/ImageTextExtractor/Pages/Image/Edit.cshtml]
+[D:/Project/Netcore/ImageTextExtractorKM/Pages/Image/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW1hZ2VcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BZWAZf0ho8YADq+BHWLI2qA+yy/NblFWrN+PC6sOi/UTqn0ALCKagVsJEWQzst8KTUGxS2Wus1uEu6Ve3EVsfg==",
+  "dgSpecHash": "bF9qLDzeD22b1V08ZLZkUEtxA2Wwz5ilKT/yLWahNLdfYzZk++h0Y3jH+o79/2U9dmXXWCGCDcFYI16ZQ8VP8g==",
   "success": true,
-  "projectFilePath": "D:\\Project\\Netcore\\ImageTextExtractor\\ImageTextExtractor.csproj",
+  "projectFilePath": "D:\\Project\\Netcore\\ImageTextExtractorKM\\ImageTextExtractor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LEGION 5 PRO\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\LEGION 5 PRO\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

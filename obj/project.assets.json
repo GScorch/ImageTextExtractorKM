@@ -675,11 +675,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\Netcore\\ImageTextExtractor\\ImageTextExtractor.csproj",
+      "projectUniqueName": "d:\\Project\\Netcore\\ImageTextExtractorKM\\ImageTextExtractor.csproj",
       "projectName": "ImageTextExtractor",
-      "projectPath": "D:\\Project\\Netcore\\ImageTextExtractor\\ImageTextExtractor.csproj",
+      "projectPath": "d:\\Project\\Netcore\\ImageTextExtractorKM\\ImageTextExtractor.csproj",
       "packagesPath": "C:\\Users\\LEGION 5 PRO\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\Netcore\\ImageTextExtractor\\obj\\",
+      "outputPath": "d:\\Project\\Netcore\\ImageTextExtractorKM\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
